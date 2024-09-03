@@ -26,8 +26,6 @@
 	var initESW = function(gslbBaseURL) {
 		embedded_svc.settings.displayHelpButton = true; //Or false
 		embedded_svc.settings.language = ''; //For example, enter 'en' or 'en-US'
-           	embedded_svc.settings.storageDomain = 'cmfgroup--syfiedev2';
-       		 
 
 		//embedded_svc.settings.defaultMinimizedText = '...'; //(Defaults to Chat with an Expert)
 		//embedded_svc.settings.disabledMinimizedText = '...'; //(Defaults to Agent Offline)
@@ -48,16 +46,16 @@
 		embedded_svc.settings.entryFeature = 'LiveAgent';
 
 		embedded_svc.init(
-			'https://cmfgroup--syfiedev2.sandbox.my.salesforce.com',
-			'https://cmfgroup--syfiedev2.sandbox.my.site.com/',
+			'https://cmfgroup--uat.sandbox.my.salesforce.com',
+			'https://cmfgroup--uat.sandbox.my.site.com/',
 			gslbBaseURL,
-			'00D7i000000XeuW',
+			'00DVZ000000IpTt',
 			'Chat_Team',
 			{
-				baseLiveAgentContentURL: 'https://c.la2s-core1.sfdc-yfeipo.salesforceliveagent.com/content',
-				deploymentId: '572Ox000001Ugdx',
-				buttonId: '573Ox000000M8YP',
-				baseLiveAgentURL: 'https://d.la2s-core1.sfdc-yfeipo.salesforceliveagent.com/chat',
+				baseLiveAgentContentURL: 'https://c.la2s-core1.sfdc-8tgtt5.salesforceliveagent.com/content',
+				deploymentId: '572VZ000000Gxyc',
+				buttonId: '573VZ0000002VhF',
+				baseLiveAgentURL: 'https://d.la2s-core1.sfdc-8tgtt5.salesforceliveagent.com/chat',
 				eswLiveAgentDevName: 'Chat_Team',
 				isOfflineSupportEnabled: false
 			}
@@ -66,7 +64,7 @@
 
 	if (!window.embedded_svc) {
 		var s = document.createElement('script');
-		s.setAttribute('src', 'https://cmfgroup--syfiedev2.sandbox.my.salesforce.com/embeddedservice/5.0/esw.min.js');
+		s.setAttribute('src', 'https://cmfgroup--uat.sandbox.my.salesforce.com/embeddedservice/5.0/esw.min.js');
 		s.onload = function() {
 			initESW(null);
 		};
